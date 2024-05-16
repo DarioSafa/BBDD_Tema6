@@ -17,7 +17,7 @@ CREATE OR REPLACE FUNCTION ejercicio10(i_num1 IN NUMBER,i_num2 IN NUMBER, i_num3
 BEGIN
     
     for i IN 2..vNumeros.LIMIT loop
-        if vNumeros(i) > vNumeros (i-1) then 
+        if vNumeros(i) > vMax then 
         vMax:=vNumeros(i);
         end if;
     end loop;
