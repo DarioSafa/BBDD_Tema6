@@ -21,6 +21,7 @@ BEGIN
 EXCEPTION
     WHEN OTHERS THEN
         DBMS_OUTPUT.PUT_LINE('Error de ejecución');
+        return -1;
 END;
 
 select ejercicio7(9) from dual;
